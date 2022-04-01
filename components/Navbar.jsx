@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <nav className="relative">
-      <div className="flex px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
+      <div className="flex  3xl:justify-center px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
         {Object.entries(requests).map(([key, { title, url }]) => (
           <h2
             key={key}
@@ -18,7 +18,7 @@ function Navbar() {
           </h2>
         ))}
       </div>
-      <div className="absolute top-0 right-0 bg-gradient-to-l from-[#020411] h-10 w-1/12" />
+      <div className="absolute 3xl:hidden top-0 right-0 bg-gradient-to-l from-[#020411] h-10 w-1/12" />
     </nav>
   )
 }

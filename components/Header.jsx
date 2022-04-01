@@ -25,7 +25,7 @@ function Header() {
         className="object-contain"
         src="/images/logo.png"
         alt="Movie APP logo"
-        width={200}
+        width={150}
         height={200}
       />
     </header>
