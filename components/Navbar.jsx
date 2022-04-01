@@ -7,12 +7,12 @@ function Navbar() {
 
   return (
     <nav className="relative">
-      <div className="flex  3xl:justify-center px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
+      <div className="flex 3xl:justify-center px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
         {Object.entries(requests).map(([key, { title, url }]) => (
           <h2
             key={key}
             onClick={() => router.push(`/?genre=${key}`)}
-            className="last:pr-24 cursor-pointer duration-100 transform hover:scale-125 hover:text-yellow-300"
+            className="last:pr-24 cursor-pointer duration-100 transform hover:scale-105 hover:text-yellow-300 text-xl"
           >
             {title}
           </h2>
